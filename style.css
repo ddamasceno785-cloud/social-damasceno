@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* FORÇA TELA CHEIA NO CELULAR */
+html, body {
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+  color: white;
+}
+
+/* LOGIN */
+.login {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.login h1 {
+  font-size: 28px;
+}
+
+.login input {
+  width: 80%;
+  max-width: 300px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.login button {
+  width: 80%;
+  max-width: 300px;
+  padding: 12px;
+  font-size: 16px;
+  background: red;
+  color: white;
+  border: none;
+}
+
+/* ESCONDER TELAS */
+.hidden {
+  display: none;
+}
+
+/* APP */
+.app {
+  position: fixed;
+  inset: 0;
+}
+
+/* FEED */
+.feed {
+  position: absolute;
+  inset: 0;
+}
+
+/* VÍDEO SEMPRE VERTICAL */
+.feed video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BOTÕES LADO DIREITO */
+.actions {
+  position: absolute;
+  right: 12px;
+  bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+}
+
+/* MENU INFERIOR */
+.menu {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 64px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #333;
+}
+
+.menu button {
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: white;
+  }
