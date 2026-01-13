@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- ESSENCIAL PRA CELULAR / TELA CHEIA -->
+  <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Social Damasceno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <div id="login" class="login">
+    <h1>Social Damasceno</h1>
+
+    <input id="username" type="text" placeholder="Seu nome">
+    <input id="key" type="password" placeholder="Chave de entrada">
+
+    <button onclick="login()">Criar usuário</button>
+  </div>
+
+  <!-- APP -->
+  <div id="app" class="app hidden">
+
+    <!-- FEED -->
+    <div class="feed">
+      <video
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        autoplay
+        loop
+        muted
+        playsinline>
+      </video>
+
+      <!-- BOTÕES LATERAIS -->
+      <div class="actions">
+        <button onclick="like()">❤️</button>
+        <button onclick="comment()">💬</button>
+        <button onclick="share()">🔗</button>
+      </div>
+    </div>
+
+    <!-- MENU INFERIOR -->
+    <div class="menu">
+      <button onclick="showFeed()">🏠</button>
+      <button onclick="createVideo()">➕</button>
+      <button onclick="profile()">👤</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+      </html>
